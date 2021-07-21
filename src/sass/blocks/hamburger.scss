@@ -1,0 +1,23 @@
+.hamburger {
+    position: fixed;
+    top: 60px;
+    right: 100px;
+    z-index: 1000;
+    span {
+        position: absolute;
+        background: black;
+        height: 3px;
+        width: 50px;
+        &:nth-child(1) {
+            margin-top: 20px;
+            width: 40px;
+        }
+        &:nth-child(2) {
+            margin-top: 10px;
+            
+        }
+        &:nth-child(3) {
+            width: 40px;
+        }
+    }
+}
