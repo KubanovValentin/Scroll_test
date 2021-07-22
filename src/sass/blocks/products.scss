@@ -20,6 +20,12 @@
         background: #F7F7F7;
         padding: 54px 84px;
         margin-bottom: 80px;
+        &:hover {
+            background:#FBF7F8;
+            h4 {
+                color: #A22324;
+            }
+        }
     }
     &__info {
         color: #010101;
@@ -72,7 +78,7 @@
     }
     #myUL li a:hover:not(.header) {
         background-color: #EBD0D4; 
-        border: 1px solid red; 
+        border: 1px solid #A22324; 
     }
     &__pagination {
         .paginationList {
@@ -110,7 +116,7 @@
                             left: 0;
                             width: 60px;
                             height: 60px;
-                            border: 1px solid red;
+                            border: 1px solid #A22324;
                             transform: rotate(-45deg);
                         }
                     }

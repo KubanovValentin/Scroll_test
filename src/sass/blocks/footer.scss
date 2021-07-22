@@ -1,0 +1,116 @@
+.footer {
+    background-color: #F7F7F7;
+    display: flex;
+    padding: 63px 0 0 100px;
+    &__adress {
+        width: 339px;
+        margin-left: 100px;
+        margin-right: 188px;
+    }
+    &__place {
+        margin-bottom: 64px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__sign {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    &__contacts {
+        width: 165px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 120px;
+    }
+    &__document {
+        width: 180px;
+        margin-right: 183px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__mail {
+        margin-bottom: 36px;
+    }
+    &__download {
+        width: 180px;
+        height: 40px;
+        border:1px solid #991426;
+        font-weight: bold;
+    }
+    &__social {
+        width: 528px;
+    }
+    &__icon {
+        display: flex;
+        background: #EBD0D4;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -20px;
+        img {
+            position: relative;
+            z-index: 5;
+            padding: 20px;
+            width: 60px;
+            height: 60px;
+            
+            &:hover {
+                transform: scale(1.5);
+            }
+            
+            // &:hover {
+            //     // background: #EBD0D4 ;
+            //     &::before {
+            //         content: '';
+            //         position: absolute;
+            //         z-index: 0;
+            //         top: 0;
+            //         left: 0;
+            //         width: 60px;
+            //         height: 60px;
+            //         border: 1px solid red;
+            //         transform: rotate(-45deg);
+            //     }
+            // }
+            
+        }
+        .socialIcon {
+            position: relative;
+            background: #EBD0D4;
+            margin-right: 10px;
+            
+            &:hover {
+                // background: #EBD0D4 ;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid #A22324;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    &__executor {
+        background: #EFEFEF;
+        width: auto;
+        height: 98px;
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+        margin-top: 25px;
+    }
+    &__executorText {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    &__executorLogo {
+        width: 100px;
+        height: 30px;
+    }
+}
