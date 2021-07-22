@@ -98,31 +98,35 @@
             width: 80px;
             height: 80px;
             margin-right: 7px;
-            // a {
-            //     &:hover {
-            //         &::before {
-            //             content: '';
-            //             position: absolute;
-            //             width: 60px;
-            //             height: 60px;
-            //             border:1px solid #CA0025;
-            //             transform: rotate(45deg);
-            //             left: 10%;
-            //             top: 23%;
-                        
-            //         }
-            //     }
-            // }
+            :hover {
+                width: 80px;
+                height: 80px;
+                border: 1px solid red;
+                transform: rotate(45deg);
+                img {
+                    width: 30px;
+                    height: 30px;
+                    transform: rotate(0deg);
+                }
+            }
         }
         &__glasses {
-
             padding: 15px;
             width: 80px;
             height:80px;
+            :hover {
+                width: 60px;
+                height: 60px;
+                border: 1px solid red;
+                transform: rotate(45deg);
+                a {
+                    transform: rotate(-45deg);
+                }
+            }
             
         }
         &__language {
-            
+
             li {
                 list-style-type: none;
             }

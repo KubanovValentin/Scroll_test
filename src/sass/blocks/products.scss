@@ -1,0 +1,141 @@
+.products {
+    &__wrapper {
+        background: #fff;
+    }
+    .container {
+        width: 1360px;
+        margin: 0 auto;
+    }
+    #secondPage, #thirdPage, #fourthPage{
+        display: none;
+    }
+    &__title {
+        font-size: 50px;
+        margin-top: 130px;
+    }
+    &__poisk {
+        margin-bottom: 93px;
+    }
+    &__item {
+        background: #F7F7F7;
+        padding: 54px 84px;
+        margin-bottom: 80px;
+    }
+    &__info {
+        color: #010101;
+        font-size: 36px;
+        margin: 0;
+    }
+    &__descr {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #010101;
+    }
+    #myInput {
+        background-position: 10px 12px; /* Расположите значок поиска */
+        background-repeat: no-repeat; /* Не повторяйте изображение значка */
+        width: 100%; /* Полная ширина */
+        font-size: 28px; /* Увеличить размер шрифта */
+        padding: 12px 20px 12px 40px; /* Добавить немного отступов */
+        border: none;
+        border-bottom: 1px solid #ddd; /* Добавить серую границу */
+        margin-bottom: 12px; /* Добавить некоторое пространство под входом */
+    }
+    
+    #myUL {
+        /* Удалить стиль списка по умолчанию */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        span {
+            margin-right: 20px;
+            font-size: 18px;
+        }
+    } 
+    
+    #myUL li a {
+        width: 146px;
+        height: 50px;
+        // border: 1px solid #ddd; 
+        margin-top: -1px; /* Предотвращение двойных границ */
+        background-color: #ffffff; 
+        padding: 12px; 
+        text-decoration: none; 
+        font-size: 18px; 
+        font-weight: bold;
+        color: black; 
+        display: block; 
+        text-align: center;
+        margin-right: 30px;
+    }
+    #myUL li a:hover:not(.header) {
+        background-color: #EBD0D4; 
+        border: 1px solid red; 
+    }
+    &__pagination {
+        .paginationList {
+            ul {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                // background: #EBD0D4 ;
+                padding: 10px 20px;
+                list-style-type: none;
+                .prev, .next {
+                    color: #010101;
+                }
+                .active {
+                    background: #EBD0D4 ;
+                    
+                }
+                .pageNumber {
+                    position: relative;
+                    z-index: 4;
+                    width: 60px;
+                    height: 60px;
+                    font-weight: bold;
+                    line-height: 60px;
+                    margin: 15px;
+                    // background: #EBD0D4 ;
+                    &:hover {
+                        // background: #EBD0D4 ;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            z-index: 0;
+                            top: 0;
+                            left: 0;
+                            width: 60px;
+                            height: 60px;
+                            border: 1px solid red;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                    a {
+                        display: block;
+                        color: #010101;
+                        text-decoration: none;
+                        
+                    }
+                    
+                    // &:hover {
+                    //     width: 60px;
+                    //     height: 60px;
+                    //     border: 1px solid red;
+                    //     transform: rotate(45deg);
+                    //     a {
+                    //         &:hover {
+                    //             transform: rotate(-45deg);
+                    //         }
+                    //     }
+                    // }
+                    
+                } 
+            }
+        }
+
+    }
+}
