@@ -1,0 +1,305 @@
+.contacts {
+    position: relative;
+    &__wrapper {
+        margin: 0;
+        display: flex;
+    }
+    .title {
+        font-size: 100px;
+        color:#991426;
+        &::before {
+            content:'';
+            position: absolute;
+            top: 128px;
+            left: -35px;
+            width: 60px; 
+            height: 60px;
+            border-top: 2px solid #991426;
+            border-right: 2px solid #991426;
+            transform: rotate(45deg);
+        }
+    }
+    &__connectionSocial {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background:#F2F2F2;
+        padding-top: 85px;
+        
+    }
+    &__connectionSocialWrapper {
+        padding-left: 90px;
+    }
+    &__title {
+        color: #000000;
+        font-size: 24px;
+        margin-top: 54px;
+        margin-bottom: 20px;
+    }
+    &__adress {
+        color: #000000;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    &__tell, &__faks, &__email{
+        color: #000000;
+        margin-bottom: 25px;
+        font-size: 18px;
+        span {
+            color: #000000;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    &__social {
+        width: 528px;
+    }
+    &__icon {
+        display: flex;
+        background: #EBD0D4;
+        margin-top:150px;
+        margin-bottom: 70px;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -20px;
+        img {
+            position: relative;
+            z-index: 5;
+            padding: 20px;
+            width: 60px;
+            height: 60px;
+            
+            &:hover {
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -ms-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                transform: scale(1.5);
+            }
+        }
+        .socialIcon {
+            position: relative;
+            background: #EBD0D4;
+            margin-right: 10px;
+            
+            &:hover {
+                // background: #EBD0D4 ;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid #A22324;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    &__executor {
+        background: #EBEBEB;
+        height: 98px;
+        margin-right: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px 0 50px;
+    }
+    &__sign {
+        padding: 0;
+        margin: 0;
+    }
+    &__executorWrapp {
+        display: flex;
+    }
+    &__executorText {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    &__executorLogo {
+        width: 100px;
+        height: 30px;
+    }
+    &__formsMap {
+        display: flex;
+        width: 100%;
+        background:#fdfdfd32;
+    }
+    &__form {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        padding: 120px 150px 100px 130px;
+    }
+    &__formTitle {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 70px;
+    }
+    &__contactForm {
+        display: flex;
+        background: rgba(255, 255, 255, 0.239);
+        h2 {
+            color: #0f3959;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .formBox {
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            input {
+                width: 100%;
+                resize: none;
+                padding: 10px 0 0 0;
+                font-size: 18px;
+                font-weight: 300;
+                color: #777;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #777;
+            }
+            .inputBox {
+                position: relative;
+                margin-bottom: 30px;
+                span {
+                    position: absolute;
+                    left: 0;
+                    padding: 5px 0;
+                    pointer-events: none;
+                    font-size: 18px;
+                    color: #777;
+                    font-weight: 300;
+                    transition: 0.3s;
+                }
+                input {
+                    &:focus {
+                        ~ span {
+                            transform: translateY(-20px);
+                            font-size: 12px;
+                            font-weight: 400;
+                            letter-spacing: 1px;
+                            color: #095a55;
+                            font-weight: 500;
+                        }
+                    }
+                    &:valid {
+                        ~ span {
+                            transform: translateY(-20px);
+                            font-size: 12px;
+                            font-weight: 400;
+                            letter-spacing: 1px;
+                            color: #042b5d;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                input[type="submit"] {
+                    position: relative;
+                    cursor: pointer;
+                    background: #991426;
+                    color: #fff;
+                    border: none;
+                    width: 100%;
+                    padding: 12px;
+                    clip-path: polygon(95% 0,100% 55%,100% 100%,5% 100%,0 50%,0 0);
+                    clip-path: polygon(95% 0,100% 55%,100% 100%,5% 100%,0 50%,0 0);
+                    &:hover {
+                        background: #ee243f;
+                    }
+                }
+            }
+        }
+
+    }
+    &__cntr {
+        .label-cbx {
+            display: flex;
+            user-select: none;
+            cursor: pointer;
+            margin-top: 50px;
+            margin-bottom: 70px;
+        }
+        .label-cbx input:checked + .checkbox {
+            border-color: #991426;
+        }
+        .label-cbx input:checked + .checkbox svg path {
+            fill: #991426;
+        }
+        .label-cbx input:checked + .checkbox svg polyline {
+            stroke-dashoffset: 0;
+        }
+        .label-cbx:hover .checkbox svg path {
+            stroke-dashoffset: 0;
+        }
+        .label-cbx .checkbox {
+            position: relative;
+            top: 2px;
+            display: flex;
+            margin-right: 8px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #C8CCD4;
+            border-radius: 3px;
+        }
+        .label-cbx .checkbox svg {
+            position: absolute;
+            top: -2px;
+            left: -2px;
+        }
+        .label-cbx .checkbox svg path {
+            fill: none;
+            stroke: #991426;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 71px;
+            stroke-dashoffset: 71px;
+            transition: all 0.6s ease;
+        }
+        .label-cbx .checkbox svg polyline {
+            fill: none;
+            stroke: #FFF;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 18px;
+            stroke-dashoffset: 18px;
+            transition: all 0.3s ease;
+        }
+        .label-cbx > div {
+            pointer-events: none;
+            vertical-align: middle;
+        }
+        .cntr {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .invisible {
+            position: absolute;
+            z-index: -1;
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+        .polic {
+            margin-left: 10px;
+            color:#000000;
+            &:hover {
+                color:#991426;
+                font-weight: 700;
+            }
+        }
+    }
+
+
+}
