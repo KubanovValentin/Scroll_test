@@ -1,23 +1,38 @@
 
 
-const menu = document.querySelector('.menu'),
-        menuItem = document.querySelectorAll('.menu__item'),
-        hamburger = document.querySelector('.hamburger');
+// const menu = document.querySelector('.menu'),
+//         menuItem = document.querySelectorAll('.menu__item'),
+//         hamburger = document.querySelector('.hamburger');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('menu_active');
-    });
+//     hamburger.addEventListener('click', () => {
+//         hamburger.classList.toggle('hamburger_active');
+//         menu.classList.toggle('menu_active');
+//     });
 
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('menu_active');
-        });
-});
+//     menuItem.forEach(item => {
+//         item.addEventListener('click', () => {
+//             hamburger.classList.toggle('hamburger_active');
+//             menu.classList.toggle('menu_active');
+//         });
+// });
 
+document.querySelector('.link').onclick=function(e){
+                document.querySelector('.block').classList.toggle("active");
+                e.preventDefault();
+            };
+    
 
+// document.getElementById('noLink1').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     alert('Скрипт сработал');
+// }, false);            
+// function myFunctionHamburger() {
+//     document.querySelector('.hamburger .hamburger_product .hamburger_news').style.display = 'none';
+// } 
 
+// function myFunctionMenu() {
+//     document.querySelector('.hamburger').style.display = 'block';
+// }                
 
 //function myFunction() {
 //     // Объявлять переменные

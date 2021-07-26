@@ -1,0 +1,254 @@
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    .overlay-header {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        &__logo {
+            display: flex;
+            align-items: center;
+            margin-right: 115px;
+        }
+        &__logo-img {
+            width: 120px;
+            height: 113px;
+            margin-right: 19px;
+        }
+        &__logo-text {
+            width: 167px;
+            height: 87px;
+            font-size: 24px;
+            color: #A22324;
+            margin: 0;
+            
+        }
+        &__elements {
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+        &__poisk {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin-right: 45px;
+            &:hover {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    left: 0;
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid #A22324;
+                    transform: rotate(-45deg);
+                }
+            }
+            img {
+                position: absolute;
+                padding: 15px;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &__glasses {
+            position: relative;
+            padding: 15px;
+            width: 60px;
+            height:60px;
+            margin-right: 45px;
+            &:hover {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    left: 0;
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid #A22324;
+                    transform: rotate(-45deg);
+                }
+            }
+            img {
+                position: absolute;
+                padding: 0px;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &__languages {
+            position: relative;
+            li {
+                list-style-type: none;
+            }
+            .blocks{
+                position: relative;
+                left: 0px;
+                top: -180px;
+                transition: .5s;
+                z-index: 10;
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    width: 60px;
+                    height: 210px;
+                    top: -100px;
+                    left: -18px;
+                    background: #fff;
+                }
+            }
+            .blocks.active {
+                position: relative;
+                left: 0px;
+                top: 45px;
+                z-index: 6;
+            }
+            .links {
+                display: block;
+                position: absolute;
+                text-decoration: none;
+                color: #000000;
+                font-weight: 700;
+                top: 45px;
+                z-index: 9;
+            } 
+        }
+        .close {
+            position: relative;
+            color: #A22324;
+            z-index: 100;
+            text-decoration: none;
+            left: 50px;
+        }
+    }
+    .overlay-list {
+        display: flex;
+        margin-top: 30px;
+        .title-litle {
+            color: #000000;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        ul {
+            list-style: none;
+            margin: 10px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            display: block;
+            color: #000000;
+            text-decoration: none;
+            &:hover {
+                color: #A22324;
+
+            }
+        }
+        &__1, &__2, &__3 {
+            width: 100%;
+            span {
+                font-weight: 700;
+                font-size: 24px;
+                
+            }
+        }
+    }
+    .overlay-footer {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        top: -140px;
+        &__blockItem {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background: #dadada;
+            padding-left: 50px;
+            width: 600px;
+            height: 250px;
+            top: 45px;
+            left: 65px;
+            .footer__icon .socialIcon {
+                background: #dadada;
+            }
+        }
+        &__contact {
+            margin-top: 40px;
+            margin-bottom: 60px;
+            color: #000000;
+            font-size: 18px;
+            span {
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        &__btn {
+            position: relative;
+            top: -185px;
+            left: 275px;
+        }
+    }
+}
+/* активируем слой затемнения и модальное окно */
+.dm-overlay:target {
+    display: block;
+/* анимация и время задержки */
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+/* блочная таблица */
+.dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/* ячейка блочной таблицы */
+.dm-cell {
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+/* модальный блок */
+.dm-modal {
+    overflow: hidden;
+    display: inline-block;
+    padding: 20px 60px;
+/* максимально возможная ширина */
+    max-width: 80em;
+    max-height: 50em;
+    background: #ffffff;
+/* внешняя тень блока */
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #cfd8dc;
+    text-align: left;
+/* анимация и время задержки */
+    -webkit-animation: fade .8s;
+    -moz-animation: fade .8s;
+    animation: fade .8s;
+}
