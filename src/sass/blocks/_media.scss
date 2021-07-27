@@ -1,0 +1,118 @@
+@media (max-width:1900px) {
+    .promo {
+        &__wrapper {
+            padding: 30px 0 0 0;
+        }
+        .header {
+            margin: 0;
+            width: 100%;
+            justify-content: space-around;
+            z-index: 2;
+            &__logo {
+                margin-right: 0;
+                padding: 5px;
+            }
+            &__logo-img {
+                width: 100%;
+                height: 100%;
+                margin-right: 0;
+            }
+            &__logo-text {
+                width: 100%;
+                height: 100%;
+                font-size: 15px;
+                color: #A22324;
+                margin: 0;
+                
+            }
+            &__menu {
+                margin-right: 0;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &_top {
+                    padding-right: 0;
+                }
+            }
+            &__elements {
+                width: 300px;
+                justify-content: space-between;
+            }
+            &__poisk {
+                margin-right: 0;
+            }
+            &__glasses {
+                margin-right: 0;
+            }
+            &__language {
+                .link {
+                    top: 35px;
+                }
+                .block.active {
+                    top: 35px;
+                } 
+            }
+            .hamburger {
+                right: -5px;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width:1400px) {
+    .promo {
+        .header {
+            &__logo-img {
+                width: 50%;
+                height: 50%;
+            }
+            &__logo-text {
+                padding-left: 10px;
+            }
+            &__menu {
+                width: 600px;
+            }
+            &__elements {
+                width: 240px;
+            }
+            &__poisk {
+                width: 40px;
+                height: 40px;
+                margin-right: 0px;
+                &:hover {
+                    &::before {
+                        content: '';
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                img {
+                    padding: 5px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            &__glasses {
+                width: 40px;
+                height:40px;
+                margin-right: 10px;
+                &:hover {
+                    &::before {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        .hamburger {
+            right: -0px;
+        }
+    }
+}
