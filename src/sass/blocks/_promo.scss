@@ -1,5 +1,8 @@
 .promo {
     position: relative;
+    &__wrapper {
+        padding: 0;
+    }
     &__header {
         width: 100%;
         position: relative;
