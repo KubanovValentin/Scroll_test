@@ -315,6 +315,13 @@
             padding-left: 10px;
         }
     }
+    .partner {
+        &__explanation {
+            padding: 42px 0 0 56px;
+            width: 464px;
+            height: 247px;
+        }
+    }
 
 }
 
@@ -371,6 +378,34 @@
             width: 100%;
             #left-side {
                 width: 30%;
+            }
+        }
+    }
+    .partner {
+        &__advantagesList {
+            padding: 66px 0 0 45px;
+            width: 445px;
+            &::before {
+                width: 500px;
+                height: 600px;
+            }
+            .advantagesList-punct {
+                a {
+                    &:before {
+                        content: '';
+                        left: 21px;
+                    }
+                }
+                &::after {
+                    content: '';
+                    left: -139px;
+                }
+                &:hover {
+                    &::before {
+                        content: '';
+                        left: 15px;
+                    }
+                }
             }
         }
     }
@@ -486,6 +521,59 @@
             min-height: 470px;
             margin: 0 0 50px 0;
         }
+    }
+    .partner {
+        &__wrapper {
+            .title {
+                font-size: 70px;
+                &::before {
+                    top: 22px;
+                }
+            }
+        }
+        &__advantagesList {
+            padding: 66px 0 0 65px;
+            width: 300px;
+            &::before {
+                width: 500px;
+            height: 600px;
+            }
+            .advantagesList-punct {
+                a {
+                    &:before {
+                        content: '';
+                        left: 21px;
+                    }
+                }
+                &::after {
+                    content: '';
+                    left: -139px;
+                    display: none;
+                }
+                &:hover {
+                    &::before {
+                        content: '';
+                        left: 15px;
+                    }
+                }
+            }
+        }
+        &__explanation {
+            padding: 78px 0 0 24px;
+            width: 365px;
+            height: 330px;
+        }
+        &__title {
+            font-size: 27px;
+        }
+        &__subtitle {
+            font-size: 23px;
+            span {
+                font-size: 60px;
+                margin-right: 10px;
+            }
+        }
+        
     }
 }
 
@@ -613,6 +701,44 @@
             margin: 0 0 50px 0;
         }
     }
+    .partner {
+        &__wrapper {
+            .title {
+                font-size: 60px;
+                &::before {
+                    top: 16px;
+                }
+            }
+        }
+        &__blockDescr {
+            flex-direction: column;
+        }
+        &__advantagesImg {
+            display: none;
+        }
+        &__advantagesList {
+            padding: 56px 0 0 140px;
+            width: 500px;
+            &::before {
+                width: 900px;
+                height: 600px;
+            }
+            .advantagesList-punct {
+                a {
+                    &:before {
+                        content: '';
+                        left: 81px;
+                    }
+                }
+                &:hover {
+                    &::before {
+                        content: '';
+                        left: 80px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:575px) {
@@ -716,6 +842,48 @@
             width: 178px;
             height: 178px;
         
+        }
+    }
+    .partner {
+        &__wrapper {
+            .title {
+                font-size: 30px;
+                margin-left: 60px;
+                &::before {
+                    top: -10px;
+                    left: -50px;
+                }
+            }
+        }
+        &__advantagesInfoWrapp {
+            margin-left: 37px;
+        }
+        &__advantagesList {
+            padding: 39px 0 0 70px;
+            width: 280px;
+            .advantagesList-punct {
+                a {
+                    &:before {
+                        content: '';
+                        left: 30px;
+                    }
+                }
+                &:hover {
+                    &::before {
+                        content: '';
+                        left: 26px;
+                    }
+                }
+            }
+        }
+        &__items {
+            margin-top: 45px;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        &__awards {
+            margin-right: 0px;
+            margin-bottom: 20px;
         }
     }
 }
