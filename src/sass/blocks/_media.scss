@@ -137,7 +137,21 @@
     }
     
 }
-
+@media (max-width:1600px) {
+    .news {
+        &__wrapper {
+            .container {
+                width: 1200px;
+            }
+        }
+        &__image {
+            width: 550px;
+        }
+        &__slaider {
+            width: 550px;
+        }
+    }
+}
 
 @media (max-width:1400px) {
     .promo {
@@ -249,6 +263,22 @@
         }
         
     }
+    .news {
+        &__wrapper {
+            .container {
+                width: 1060px;
+            }
+        }
+        &__image {
+            width: 520px;
+        }
+        &__slaider {
+            width: 520px;
+            #left-side {
+                width: 30%;
+            }
+        }
+    }
 }
 
 
@@ -285,6 +315,7 @@
             padding-left: 10px;
         }
     }
+
 }
 
 
@@ -325,6 +356,23 @@
             }
         }
         
+    }
+    .news {
+        &__wrapper {
+            .container {
+                width: 790px;
+                flex-direction: column;
+            }
+        }
+        &__image {
+            width: 100%;
+        }
+        &__slaider {
+            width: 100%;
+            #left-side {
+                width: 30%;
+            }
+        }
     }
 }
 
@@ -423,6 +471,20 @@
         }
         &__title {
             height:60px;
+        }
+    }
+    .news {
+        &__wrapper {
+            .container {
+                width: 540px;
+            }
+        }
+        &__image {
+            margin: 50px 0 50px 0;
+        }
+        &__slaider {
+            min-height: 470px;
+            margin: 0 0 50px 0;
         }
     }
 }
@@ -530,7 +592,26 @@
                 display: none;
             }
         }
-
+    }
+    .news {
+        &__wrapper {
+            .container {
+                width: 530px;
+            }
+        }
+        &__textBlock {
+            padding: 0 15px;
+        }
+        &__title {
+            margin-left: 40px;
+        }
+        &__image {
+            margin: 50px 0 50px 0;
+        }
+        &__slaider {
+            min-height: 470px;
+            margin: 0 0 50px 0;
+        }
     }
 }
 
@@ -599,6 +680,42 @@
     .product {
         &__logo {
             display: none;
+        }
+    }
+    .news {
+        &__wrapper {
+            .container {
+                width: 300px;
+            }
+        }
+        &__textBlock {
+            padding: 0 5px;
+        }
+        .title {
+            font-size: 50px;
+            &::before {
+                content: '';
+                top: 8px;
+            }
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__image {
+            img {
+                object-fit: contain;
+            }
+        }
+        #less {
+            display: block;
+        }
+        #more {
+            display: none;
+        }
+        .big {
+            width: 178px;
+            height: 178px;
+        
         }
     }
 }
