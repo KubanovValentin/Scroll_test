@@ -102,6 +102,39 @@
             }
         }
     }
+    .product {
+        &__title {
+            font-size: 25px;
+        }
+        #sugar {
+            .divAnimRow {
+                top: 29em;
+                width: 340px;
+                left: 1em;
+                height: 340px;
+            }
+        }
+        #fruit {
+            .divAnimCircl {
+                width: 600px;
+                height: 600px;
+                top: 21em;
+            }
+        }
+        #juice {
+            .divAnimsquare {
+                width: 590px;
+                height: 400px;
+                top: 24em;
+            }
+        }
+        #vegetables {
+            .divAnimellipse {
+                top: 8em;
+                left: 3em;
+            }
+        }
+    }
     
 }
 
@@ -179,6 +212,43 @@
             }
         }
     }
+    .product {
+        &__item {
+            padding-left: 15px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        #sugar {
+            .divAnimRow {
+                top: 29em;
+                width: 340px;
+                left: 1em;
+                height: 340px;
+            }
+        }
+        #fruit {
+            .divAnimCircl {
+                width: 600px;
+                height: 600px;
+                top: 21em;
+            }
+        }
+        #juice {
+            .divAnimsquare {
+                width: 590px;
+                height: 400px;
+                top: 24em;
+            }
+        }
+        #vegetables {
+            .divAnimellipse {
+                top: 8em;
+                left: 3em;
+            }
+        }
+        
+    }
 }
 
 
@@ -210,18 +280,52 @@
         }
         
     }
+    .product {
+        &__item {
+            padding-left: 10px;
+        }
+    }
 }
 
 
 @media (max-width:1200px){
-    // .promo {
-    //     &__elements {
-    //         .hamburger {
-    //             right: -385px;
-    //         }
-    //     }
+    .product {
+        &__item {
+            padding-left: 5px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        #sugar {
+            .divAnimRow {
+                top: 29em;
+                width: 340px;
+                left: 1em;
+                height: 340px;
+            }
+        }
+        #fruit {
+            .divAnimCircl {
+                width: 600px;
+                height: 600px;
+                top: 21em;
+            }
+        }
+        #juice {
+            .divAnimsquare {
+                width: 590px;
+                height: 400px;
+                top: 24em;
+            }
+        }
+        #vegetables {
+            .divAnimellipse {
+                top: 8em;
+                left: 3em;
+            }
+        }
         
-    // }
+    }
 }
 
 @media (max-width:991px) {
@@ -298,6 +402,27 @@
                 }
 
             }
+        }
+    }
+    .product {
+        &__wrapper {
+            height: auto;
+        }
+        &__logo {
+            left: 300px;
+        }
+        &__items {
+            flex-direction: column;
+            
+        }
+        &__item {
+            padding: 0;
+            padding-left: 5em;
+            padding-top: 1em;
+            height: 13em;
+        }
+        &__title {
+            height:60px;
         }
     }
 }
@@ -469,6 +594,11 @@
                 margin-right: 100px;
                 display: none;
             }
+        }
+    }
+    .product {
+        &__logo {
+            display: none;
         }
     }
 }
