@@ -151,6 +151,12 @@
             width: 550px;
         }
     }
+    .contacts {
+        &__executor {
+            margin-right: 20px;
+            padding: 0px 25px 0 25px;
+        }
+    }
 }
 
 @media (max-width:1400px) {
@@ -322,6 +328,29 @@
             height: 247px;
         }
     }
+    .contacts {
+        &__formTitle {
+            margin-bottom: 33px;
+            margin-top: 111px;
+            margin-left: 140px;
+        }
+        &__contactForm {
+            
+            width: 400px;
+        }  
+        &__connectionSocialWrapper {
+            padding-left: 66px; 
+        } 
+        &__executor {
+            margin-right: 3px;
+            padding: 0px 0px 0 22px;
+            justify-content: space-around;
+        }
+        &__executorWrapp {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
 }
 
@@ -409,6 +438,70 @@
             }
         }
     }
+    .contacts {
+        .title {
+            font-size: 60px;
+            &::before {
+                content: '';
+                top: 98px;
+            }
+        }
+        &__formTitle {
+            margin-bottom: 33px;
+            margin-top: 111px;
+            margin-left: 85px;
+        }
+        &__contactForm {
+            width: 280px;
+        } 
+        &__title {
+            font-size: 22px;
+        }
+        &__connectionSocialWrapper {
+            padding-left: 45px; 
+        } 
+        &__executor {
+            margin-right: 3px;
+            padding: 0px 0px 0 22px;
+            justify-content: space-around;
+        }
+        &__sign {
+            width: 180px;
+        }
+        &__executorWrapp {
+            display: flex;
+            flex-direction: column;
+        }
+        &__social {
+            width: 290px;
+        }
+        &__map {
+            position: absolute;
+            top: 477px;
+            left: -541px;
+        }
+        &__cntr {
+            .label-cbx {
+                flex-direction: column;
+                margin: 0 auto;
+                div {
+                    margin: 0 auto;
+                }
+                .checkbox {
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                    
+                }
+            }
+            .polic {
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+            
+            
+        }
+    }
+
 }
 
 @media (max-width:991px) {
@@ -575,6 +668,64 @@
         }
         
     }
+    .contacts {
+        .title {
+            font-size: 60px;
+            &::before {
+                content: '';
+                top: 98px;
+            }
+        }
+        &__formTitle {
+            margin-bottom: 33px;
+            margin-top: 111px;
+            margin-left: 85px;
+        }
+        &__contactForm {
+            width: 280px;
+        } 
+        &__title {
+            font-size: 22px;
+        }
+        &__connectionSocialWrapper {
+            padding-left: 45px; 
+        } 
+        &__executor {
+            margin-right: 3px;
+            padding: 0px 0px 0 22px;
+            justify-content: space-around;
+        }
+        &__executorWrapp {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__map {
+            position: absolute;
+            top: 477px;
+            left: -541px;
+        }
+    }
+    .hamburger-page {
+        .hamburger-page-header {
+            display: flex;
+            justify-content: center;
+        }
+        .hamburger-page-footer {
+            &__item {
+                width: 170px;
+                top: 15em;
+            }
+            &__blockItem {
+                padding-left: 32px;
+                width: 460px;       
+            }
+            &__btn {
+                right: 20px;
+            }
+        }
+    }
+    
 }
 
 
@@ -739,6 +890,105 @@
             }
         }
     }
+    .contacts {
+        &__wrapper {
+            flex-direction: column;
+        }
+        .title {
+            font-size: 50px;
+            &::before {
+                content: '';
+                top: 14em;
+            }
+        }
+        &__formTitle {
+            margin-bottom: 33px;
+            margin-top: 111px;
+            margin-left: 155px;
+        }
+        &__contactForm {
+            width: 260px;
+            height: 650px;
+            .formBox {
+                height: 470px;
+            }
+        }  
+        &__title {
+            font-size: 22px;
+        }
+        &__connectionSocial {
+            order: 1;
+        }
+        &__connectionSocialWrapper {
+            padding-left: 45px; 
+        } 
+        &__executor {
+            margin-right: 3px;
+            padding: 0px 0px 0 22px;
+            justify-content: space-around;
+        }
+        &__executorWrapp {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__map {
+            position: absolute;
+            top: 477px;
+            left: -541px;
+        }
+    }
+    .hamburger-page {
+        .hamburger-page-header {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            &__logo {
+                display: flex;
+                flex-direction: column;
+            }
+            &__logo-text {
+                width: 167px;
+                height: 120px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+            &__elements {
+                justify-content: center;
+            }
+            &__languages {
+                position: relative;
+                top: -248px;
+                left: 0;
+            }
+        }
+        .hamburger-page-list {
+            display: flex;
+            margin-top: 90px;
+            flex-direction: column;
+            .title-litle {
+                font-size: 36px;
+            }
+        }
+        .hamburger-page-footer {
+            &__item {
+                width: 170px;
+                top: 15em;
+            }
+            &__blockItem {
+                padding-left: 9px;
+                width: 290px;
+                height: 270px;       
+            }
+            &__btn {
+                right: 47px;
+                top: 13.5em;
+            }
+        }
+    }
+
 }
 
 @media (max-width:575px) {
@@ -884,6 +1134,76 @@
         &__awards {
             margin-right: 0px;
             margin-bottom: 20px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            flex-direction: column;
+        }
+        .title {
+            font-size: 40px;
+            margin-left: 60px;
+            &::before {
+                content: '';
+                top: 16.5em;
+            }
+        }
+        &__formTitle {
+            margin-bottom: 40px;
+            margin-top: 65px;
+            margin-left: 35px;
+        }
+        &__contactForm {
+            width: 260px;
+            height: 650px;
+            .formBox {
+                height: 470px;
+            }
+        } 
+        &__title {
+            font-size: 22px;
+        }
+        &__connectionSocial {
+            order: 1;
+        }
+        &__social {
+            width: 290px;
+            margin-left: 10px;
+        }
+        &__connectionSocialWrapper {
+            padding-left: 10px; 
+        } 
+        &__executor {
+            margin-right: 3px;
+            padding: 0px 0px 0 22px;
+            justify-content: space-around;
+        }
+        &__executorWrapp {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__map {
+            position: absolute;
+            top: 477px;
+            left: -541px;
+        }
+    }
+    .hamburger-page {
+        .hamburger-page-footer {
+            &__item {
+                width: 234px;
+                top: 24em;
+            }
+            &__blockItem {
+                padding-left: 8px;
+                width: 290px;
+                height: 270px;       
+            }
+            &__btn {
+                right: 47px;
+                top: 13.5em;
+            }
         }
     }
 }

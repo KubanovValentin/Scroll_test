@@ -1,18 +1,26 @@
-.dm-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.65);
-    display: block;
-    overflow: auto;
+.hamburger-page {
+    // position: relative;
+    // display: block;
+    // overflow: auto;
     width: 100%;
-    height: 100%;
-    z-index: 100000;
-    .overlay-header {
-        position: relative;
+    height: 100vh;
+    padding: 1em;
+    &__wrapper {
+        // position: relative;
+        height: 100%;
+        width: auto;
+        .close {
+            position: absolute;
+            color: #A22324;
+            z-index: 100;
+            text-decoration: none;
+            right: 3%;
+            top: 1em;
+        }
+    }
+    .hamburger-page-header {
         display: flex;
         justify-content: space-around;
-        overflow: hidden;
         &__logo {
             display: flex;
             align-items: center;
@@ -29,6 +37,7 @@
             font-size: 24px;
             color: #A22324;
             margin: 0;
+            font-weight: 700;
             
         }
         &__elements {
@@ -96,7 +105,7 @@
             li {
                 list-style-type: none;
             }
-            .blocks{
+            .block{
                 position: relative;
                 left: 0px;
                 top: -180px;
@@ -114,16 +123,16 @@
                     height: 210px;
                     top: -100px;
                     left: -18px;
-                    background: #fff;
+                    background: rgb(202, 199, 199);
                 }
             }
-            .blocks.active {
+            .block.active {
                 position: relative;
                 left: 0px;
                 top: 45px;
                 z-index: 6;
             }
-            .links {
+            .link {
                 display: block;
                 position: absolute;
                 text-decoration: none;
@@ -133,17 +142,11 @@
                 z-index: 9;
             } 
         }
-        .close {
-            position: relative;
-            color: #A22324;
-            z-index: 100;
-            text-decoration: none;
-            left: 50px;
-        }
+        
     }
-    .overlay-list {
+    .hamburger-page-list {
         display: flex;
-        margin-top: 30px;
+        margin-top: 90px;
         .title-litle {
             color: #000000;
             font-size: 24px;
@@ -167,6 +170,7 @@
         }
         &__1, &__2, &__3 {
             width: 100%;
+            margin: 10px;
             span {
                 font-weight: 700;
                 font-size: 24px;
@@ -174,22 +178,22 @@
             }
         }
     }
-    .overlay-footer {
+    .hamburger-page-footer {
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        top: -140px;
+
         &__blockItem {
-            position: relative;
+            position: absolute;
             display: flex;
             flex-direction: column;
             background: #dadada;
             padding-left: 50px;
             width: 600px;
             height: 250px;
-            top: 45px;
-            left: 65px;
+            top: 3em;
+            right: 0;
             .footer__icon .socialIcon {
                 background: #dadada;
             }
@@ -204,51 +208,60 @@
                 font-weight: 700;
             }
         }
+        &__item {
+            position: absolute;
+            top: 17em;
+        }
         &__btn {
+            position: absolute;
+            top: 55px;
+            right: 50px;
+        }
+        &__icon {
+            display: flex;
+            background: #EBD0D4;
+            width: 60px;
+            height: 60px;
             position: relative;
-            top: -185px;
-            left: 275px;
+            top: -20px;
+            img {
+                position: relative;
+                z-index: 5;
+                padding: 20px;
+                width: 60px;
+                height: 60px;
+                
+                &:hover {
+                    transform: scale(1.5);
+                }
+                
+            }
+            .socialIcon {
+                position: relative;
+                background: #EBD0D4;
+                margin-right: 10px;
+                
+                &:hover {
+                    // background: #EBD0D4 ;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        z-index: 1;
+                        top: 0;
+                        left: 0;
+                        width: 60px;
+                        height: 60px;
+                        border: 1px solid #A22324;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        &__download {
+            width: 180px;
+            height: 40px;
+            border:1px solid #991426;
+            font-weight: bold;
         }
     }
-}
-/* активируем слой затемнения и модальное окно */
-.dm-overlay:target {
-    display: block;
-/* анимация и время задержки */
-    -webkit-animation: fade .6s;
-    -moz-animation: fade .6s;
-    animation: fade .6s;
-}
-/* блочная таблица */
-.dm-table {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-/* ячейка блочной таблицы */
-.dm-cell {
-    display: table-cell;
-    padding: 0 1em;
-    vertical-align: middle;
-    text-align: center;
-}
-/* модальный блок */
-.dm-modal {
-    overflow: hidden;
-    display: inline-block;
-    padding: 20px 60px;
-/* максимально возможная ширина */
-    max-width: 80em;
-    max-height: 50em;
-    background: #ffffff;
-/* внешняя тень блока */
-    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-    color: #cfd8dc;
-    text-align: left;
-/* анимация и время задержки */
-    -webkit-animation: fade .8s;
-    -moz-animation: fade .8s;
-    animation: fade .8s;
 }

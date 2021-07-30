@@ -13,11 +13,11 @@ body {
     background-color:#fff;
 }
 
-@import './blocks/promo.scss';
-@import './blocks/slider.scss';
-@import './blocks/hamburger.scss';
-@import './blocks/model';
-@import './blocks/product.scss';
+@import './blocks/promo';
+@import './blocks/slider';
+@import './blocks/hamburger';
+@import './blocks/hamburger-page';
+@import './blocks/product';
 @import './blocks/news';
 @import './blocks/newSlider';
 @import './blocks/partner';
